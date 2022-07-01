@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <div class="column" id="firN">
+        First Number: <input type="text" id="firstNumber" #num1/> 
+    </div>
+    <div class="column" id="secN">
+        Second Number: <input type="text" id="secondNumber" #num2/>
+    </div>
+    <div class="column" id="reN">
+        Result: <input class="display-box" type="text" id="res" placeholder="{{result}}"/>
+    </div>
+    <!-- <div class="row" id="thebuttons">
+        <input type="button" value="Add" (click)="addOperation(num1.value,num2.value)"/>
+        <input type="button" value="Sub" (click)="subOperation(num1.value,num2.value)"/>
+        <input type="button" value="Mul" (click)="mulOperation(num1.value,num2.value)"/>
+        <input type="button" value="Div" (click)="divOperation(num1.value,num2.value)"/>
+    </div> -->
+    <div class="row" id="thebuttons">
+        <button class="btn btn-primary btn-xs" type="submit" value="Add" (click)="addOperation(num1.value,num2.value)">Add</button>
+        <button class="btn btn-primary btn-xs" type="submit" value="Sub" (click)="subOperation(num1.value,num2.value)">Sub</button>
+        <button class="btn btn-primary btn-xs" type="submit" value="Mul" (click)="mulOperation(num1.value,num2.value)">Mul</button>
+        <button class="btn btn-primary btn-xs" type="submit" value="Div" (click)="divOperation(num1.value,num2.value)">Div</button>
+    </div>
+</div>
